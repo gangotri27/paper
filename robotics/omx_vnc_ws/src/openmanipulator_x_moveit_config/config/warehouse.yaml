@@ -1,0 +1,2 @@
+warehouse_plugin: "warehouse_ros_sqlite::DatabaseConnection"  # FIXED plugin name [web:59]
+warehouse_host: "/home/ubuntu/.ros/omx_warehouse.sqlite"     # Absolute path, NO port [web:82]

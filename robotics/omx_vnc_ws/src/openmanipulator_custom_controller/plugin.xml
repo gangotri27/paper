@@ -1,0 +1,18 @@
+<library path="my_controller">
+  <!-- Use :: to match the C++ class namespace exactly -->
+  <class
+    name="openmanipulator_custom_controller/MyController"
+    type="openmanipulator_custom_controller::MyController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>Custom ROS2 Jazzy Controller</description>
+  </class>
+</library>
+
+
+<!-- <library path="openmanipulator_custom_controller">
+  <class
+    type="openmanipulator_custom_controller::MyController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>Custom ROS2 Jazzy Controller for joint1 and joint3</description>
+  </class>
+</library> -->

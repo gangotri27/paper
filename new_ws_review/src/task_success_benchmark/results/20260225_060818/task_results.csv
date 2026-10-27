@@ -1,0 +1,11 @@
+success,stage_failed,stage_number,error_code,error_description,failure_mode,stages_completed,seed,robot_type,roll_required
+False,approach_pick,1,-7,TIMED_OUT,TIMED_OUT_AT_APPROACH_PICK,0,402798,6dof,False
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,25004,6dof,False
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,715386,6dof,False
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,839530,6dof,False
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,545430,6dof,False
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,586169,6dof,True
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,471808,6dof,True
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,703235,6dof,True
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,45182,6dof,True
+False,approach_pick,1,99999,GOAL_REJECTED,GOAL_REJECTED_AT_APPROACH_PICK,0,658298,6dof,True

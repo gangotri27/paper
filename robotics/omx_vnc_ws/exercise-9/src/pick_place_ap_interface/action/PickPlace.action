@@ -1,0 +1,10 @@
+# Goal
+bool enable_auto_mode
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string current_step
+string status

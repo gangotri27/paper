@@ -1,0 +1,10 @@
+TASK SUCCESS BENCHMARK SUMMARY
+==================================================
+
+                         success  ... stages_completed
+                           count  ...             mean
+robot_type roll_required          ...                 
+6dof       False               5  ...              0.0
+           True                5  ...              0.0
+
+[2 rows x 5 columns]

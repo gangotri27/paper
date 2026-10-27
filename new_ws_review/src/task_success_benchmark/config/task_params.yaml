@@ -1,0 +1,65 @@
+# Task Success Benchmark Parameters
+# All positions in meters, orientations in radians
+
+task:
+  # Pick position (free space, not in corridor)
+  pick:
+    x: 0.20
+    y: 0.0
+    z: 0.20
+  
+  # Place position
+  place:
+    x: 0.20
+    y: 0.0
+    z: 0.20
+  
+  # Lift height (safe clearance)
+  lift_height: 0.25
+  
+  # Orientations
+  orientations:
+    no_roll:
+      pick: 0.0
+      place: 0.0
+    with_roll:
+      pick: 0.0
+      place: 1.570796  # 90 degrees
+
+planning:
+  timeout_per_stage: 10.0  # seconds
+  planner_id: "RRTkConfigDefault"
+  num_planning_attempts: 20
+  
+  # CRITICAL: Strict orientation tolerances
+  # Roll tolerance: 0.05 rad (~2.9°) - strict but achievable
+  # Pitch/Yaw tolerance: 0.02 rad (~1.1°) - prevents compensation
+  tolerances:
+    roll: 0.2     # Increased from 0.05
+    pitch: 0.2    # Increased from 0.02
+    yaw: 0.2      # Increased from 0.02
+    position: 0.05 # Increased from 0.01
+
+trials:
+  per_condition: 50  # Will be 50 per cell = 200 total
+  pause_between_trials: 1.0  # seconds
+  pause_between_conditions: 10.0  # seconds
+
+robot:
+  # Start state (your verified collision-free configuration)
+  start_state:
+    joint1: 0.0
+    joint2: 0.0  # -37 degrees
+    joint3: 0.0
+    joint4: 0.0
+    joint5_roll: 0.0  # Only for 6-DOF
+  
+  # Joint names
+  joints:
+    '5dof': ['joint1', 'joint2', 'joint3', 'joint4']
+    '6dof': ['joint1', 'joint2', 'joint3', 'joint4', 'joint5_roll']
+  
+  # End-effector links
+  ee_links:
+    '5dof': 'link5'
+    '6dof': 'wrist_roll_link'

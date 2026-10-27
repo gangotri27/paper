@@ -1,0 +1,55 @@
+planning_plugins: ["ompl_interface/OMPLPlanner"]
+request_adapters: ["default_planning_request_adapters/ResolveConstraintFrames",
+                   "default_planning_request_adapters/ValidateWorkspaceBounds",
+                   "default_planning_request_adapters/CheckStartStateBounds",
+                   "default_planning_request_adapters/CheckStartStateCollision"]
+response_adapters: ["default_planning_response_adapters/AddTimeOptimalParameterization",
+                    "default_planning_response_adapters/ValidateSolution",
+                    "default_planning_response_adapters/DisplayMotionPath"]
+
+planner_configs:
+  RRTConnectkConfigDefault:
+    type: geometric::RRTConnect
+    range: 0.0
+
+  RRTkConfigDefault:
+    type: geometric::RRT
+    range: 0.0
+    goal_bias: 0.05
+
+  PRMkConfigDefault:
+    type: geometric::PRM
+    max_nearest_neighbors: 10
+
+  LazyPRMkConfigDefault:
+    type: geometric::LazyPRM
+    range: 0.0
+
+  ESTkConfigDefault:
+    type: geometric::EST
+    range: 0.0
+    goal_bias: 0.05
+
+  SBLkConfigDefault:
+    type: geometric::SBL
+    range: 0.0
+
+  KPIECEkConfigDefault:
+    type: geometric::KPIECE
+    range: 0.0
+    goal_bias: 0.05
+
+  LBKPIECEkConfigDefault:
+    type: geometric::LBKPIECE
+    range: 0.0
+    goal_bias: 0.05
+
+  RRTstarkConfigDefault:
+    type: geometric::RRTstar
+    range: 0.0
+    goal_bias: 0.05
+    delay_collision_checking: true
+
+  PRMstarkConfigDefault:
+    type: geometric::PRMstar
+

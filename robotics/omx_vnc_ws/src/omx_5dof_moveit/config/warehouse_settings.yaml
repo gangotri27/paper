@@ -1,0 +1,2 @@
+warehouse_plugin: warehouse_ros_sqlite::DatabaseConnection
+warehouse_host: ~/.ros/moveit_warehouse.sqlite

@@ -1,0 +1,10 @@
+build/
+install/
+*.log
+log/
+omx_vnc_backup/
+*.pyc
+__pycache__/
+.ros/
+venv*/
+venv_analysis/

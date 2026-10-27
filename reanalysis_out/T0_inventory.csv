@@ -1,0 +1,9 @@
+file,config,width_m,rows,goals,placeholder_goals,modified
+planning_5dof_w0.12.db,5dof,0.12,70,7,6,2026-10-25 22:51
+planning_5dof_w0.14.db,5dof,0.14,70,7,6,2026-10-25 22:51
+planning_5dof_w0.20.db,5dof,0.2,70,7,6,2026-10-25 22:51
+planning_6dof_w0.12.db,6dof,0.12,70,7,0,2026-10-25 22:51
+planning_6dof_w0.14.db,6dof,0.14,70,7,0,2026-10-25 22:51
+planning_6dof_w0.16.db,6dof,0.16,70,7,0,2026-10-25 22:51
+planning_6dof_w0.18.db,6dof,0.18,70,7,0,2026-10-25 22:51
+planning_6dof_w0.20.db,6dof,0.2,70,7,0,2026-10-25 22:51

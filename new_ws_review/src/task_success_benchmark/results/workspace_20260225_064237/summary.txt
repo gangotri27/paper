@@ -1,0 +1,21 @@
+REACHABLE WORKSPACE SUMMARY
+==================================================
+
+Timestamp: 20260225_064237
+Robot Type: 6dof
+
+Grid Test (z=0.2m): 0/77 positions reachable
+Success rate: 0.0%
+
+Height Test Results:
+z=0.10: NoRoll=False, Roll45=False, Roll90=False
+z=0.13: NoRoll=False, Roll45=False, Roll90=False
+z=0.16: NoRoll=True, Roll45=False, Roll90=False
+z=0.19: NoRoll=False, Roll45=False, Roll90=False
+z=0.22: NoRoll=False, Roll45=False, Roll90=False
+z=0.25: NoRoll=True, Roll45=False, Roll90=False
+z=0.28: NoRoll=True, Roll45=False, Roll90=False
+z=0.31: NoRoll=False, Roll45=False, Roll90=False
+z=0.34: NoRoll=False, Roll45=False, Roll90=False
+z=0.37: NoRoll=False, Roll45=False, Roll90=False
+z=0.40: NoRoll=False, Roll45=False, Roll90=False

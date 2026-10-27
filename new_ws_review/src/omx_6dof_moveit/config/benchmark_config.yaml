@@ -1,0 +1,35 @@
+benchmark_config:
+  warehouse:
+    host: /home/your_user/.ros/omx_warehouse.sqlite
+    port: 0
+    scene_name: ""
+    plugin: warehouse_ros_sqlite::DatabaseConnection
+
+  parameters:
+    name: omx_dof_comparison
+    runs: 100                     # 100 trials per query
+    timeout: 5.0                  # planning time limit (seconds)
+    output_directory: /home/your_user/benchmark_results
+    group: arm
+    query_regex: ".*"
+    start_state_regex: ".*"
+    goal_constraint_regex: ".*"
+
+  planning_pipelines:
+    pipelines:
+      - ompl
+
+  planners:
+    ompl:
+      planners:
+        - RRTConnectkConfigDefault
+
+  scenes:
+    - omx_table_scene
+    - omx_vertical_constraint_scene
+    - omx_shelf_insertion_scene
+
+  queries:
+    - DOF_Comparison
+    - Vertical_Orientation_Test
+    - Shelf_Insert_Test

@@ -1,0 +1,1077 @@
+[INFO] [launch]: All log files can be found below /home/gangotri/.ros/log/2026-10-26-12-44-25-238613-gangotri-HP-Laptop-15s-eq2xxx-30603
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [30608]
+[INFO] [ros2_control_node-2]: process started with pid [30609]
+[robot_state_publisher-1] [INFO] [1792998865.507157212] [robot_state_publisher]: Robot initialized
+[ros2_control_node-2] [INFO] [1792998865.515806945] [controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[ros2_control_node-2] [INFO] [1792998865.520854210] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[ros2_control_node-2] [INFO] [1792998865.520941744] [controller_manager]: update rate is 50 Hz
+[ros2_control_node-2] [INFO] [1792998865.520948006] [controller_manager]: Overruns handling is : enabled
+[ros2_control_node-2] [INFO] [1792998865.520952244] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-2] [WARN] [1792998865.521120629] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-2] [INFO] [1792998865.691443425] [controller_manager]: Received robot description from topic.
+[ros2_control_node-2] [INFO] [1792998865.691547079] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[ros2_control_node-2] [INFO] [1792998865.695285392] [controller_manager]: Loading hardware 'MockSystem' 
+[ros2_control_node-2] [INFO] [1792998865.695839590] [controller_manager]: Loaded hardware 'MockSystem' from plugin 'mock_components/GenericSystem'
+[ros2_control_node-2] [INFO] [1792998865.695909340] [controller_manager]: Initialize hardware 'MockSystem' 
+[ros2_control_node-2] [INFO] [1792998865.704166137] [controller_manager]: Successful initialization of hardware 'MockSystem'
+[ros2_control_node-2] [INFO] [1792998865.704411347] [controller_manager]: Activating component 'MockSystem'.
+[ros2_control_node-2] [INFO] [1792998865.704426385] [resource_manager]: 'configure' hardware 'MockSystem' 
+[ros2_control_node-2] [INFO] [1792998865.704440541] [resource_manager]: Successful 'configure' of hardware 'MockSystem'
+[ros2_control_node-2] [INFO] [1792998865.704448426] [resource_manager]: 'activate' hardware 'MockSystem' 
+[ros2_control_node-2] [INFO] [1792998865.704458195] [resource_manager]: Successful 'activate' of hardware 'MockSystem'
+[ros2_control_node-2] [INFO] [1792998865.704526923] [controller_manager]: Registering statistics for : MockSystem
+[ros2_control_node-2] [INFO] [1792998865.704608105] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[INFO] [spawner-3]: process started with pid [30652]
+[spawner-3] [INFO] [1792998870.904720650] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[ros2_control_node-2] [INFO] [1792998871.157078444] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[ros2_control_node-2] [INFO] [1792998871.157122399] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1792998871.160924119] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/launch_params_tmcmj81n --params-file /home/gangotri/new_ws_review/install/omx_6dof_moveit/share/omx_6dof_moveit/config/ros2_controllers.yaml 
+[spawner-3] [INFO] [1792998871.183243479] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[ros2_control_node-2] [INFO] [1792998871.184289842] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1792998871.184485184] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[ros2_control_node-2] [INFO] [1792998871.203751122] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[ros2_control_node-2] [INFO] [1792998871.222009210] [controller_manager]: Successfully switched controllers!
+[spawner-3] [INFO] [1792998871.243829221] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-3]: process has finished cleanly [pid 30652]
+[INFO] [spawner-4]: process started with pid [30680]
+[spawner-4] [INFO] [1792998873.907181065] [spawner_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
+[ros2_control_node-2] [INFO] [1792998875.661161076] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[ros2_control_node-2] [INFO] [1792998875.661253816] [controller_manager]: Loading controller 'arm_controller'
+[ros2_control_node-2] [INFO] [1792998875.664784662] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /tmp/launch_params_tmcmj81n --params-file /home/gangotri/new_ws_review/install/omx_6dof_moveit/share/omx_6dof_moveit/config/ros2_controllers.yaml 
+[spawner-4] [INFO] [1792998875.682872038] [spawner_arm_controller]: Loaded arm_controller
+[ros2_control_node-2] [INFO] [1792998875.683733964] [controller_manager]: Configuring controller: 'arm_controller'
+[ros2_control_node-2] [INFO] [1792998875.683922811] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-2] [INFO] [1792998875.683947084] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ros2_control_node-2] [INFO] [1792998875.683968921] [arm_controller]: Using 'splines' interpolation method.
+[ros2_control_node-2] [INFO] [1792998875.686906699] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ros2_control_node-2] [INFO] [1792998875.691806675] [arm_controller]: Setting initial scaling factor to 1.000000
+[ros2_control_node-2] [INFO] [1792998875.691838814] [arm_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[ros2_control_node-2] [INFO] [1792998875.703880826] [controller_manager]: Activating controllers: [ arm_controller ]
+[ros2_control_node-2] [INFO] [1792998875.722237010] [controller_manager]: Successfully switched controllers!
+[spawner-4] [INFO] [1792998875.743952070] [spawner_arm_controller]: Configured and activated arm_controller
+[INFO] [spawner-4]: process has finished cleanly [pid 30680]
+[INFO] [spawner-5]: process started with pid [30709]
+[spawner-5] [INFO] [1792998876.903895488] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[ros2_control_node-2] [INFO] [1792998878.657480870] [controller_manager]: Loading controller : 'gripper_controller' of type 'position_controllers/GripperActionController'
+[ros2_control_node-2] [INFO] [1792998878.657534856] [controller_manager]: Loading controller 'gripper_controller'
+[ros2_control_node-2] [INFO] [1792998878.658960459] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /tmp/launch_params_tmcmj81n --params-file /home/gangotri/new_ws_review/install/omx_6dof_moveit/share/omx_6dof_moveit/config/ros2_controllers.yaml 
+[ros2_control_node-2] [WARN] [1792998878.669869306] [gripper_controller]: [Deprecated]: the `position_controllers/GripperActionController` and `effort_controllers::GripperActionController` controllers are replaced by 'parallel_gripper_controllers/GripperActionController' controller
+[spawner-5] [INFO] [1792998878.683193342] [spawner_gripper_controller]: Loaded gripper_controller
+[ros2_control_node-2] [INFO] [1792998878.684221221] [controller_manager]: Configuring controller: 'gripper_controller'
+[ros2_control_node-2] [INFO] [1792998878.684351931] [gripper_controller]: Action status changes will be monitored at 20.000000 Hz.
+[ros2_control_node-2] [ERROR] [1792998878.684369028] [gripper_controller]: Joint name cannot be empty
+[ros2_control_node-2] [WARN] [1792998878.684411449] [gripper_controller]: Callback returned ERROR during the transition: configure
+[ros2_control_node-2] [ERROR] [1792998878.684419707] [controller_manager]: After configuring, controller 'gripper_controller' is in state 'unconfigured' , expected inactive.
+[spawner-5] [ERROR] [1792998878.685376843] [spawner_gripper_controller]: Failed to configure controller
+[ERROR] [spawner-5]: process has died [pid 30709, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner gripper_controller --controller-manager /controller_manager --ros-args'].
+[INFO] [move_group-6]: process started with pid [30735]
+[move_group-6] [INFO] [1792998880.577776950] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0.00230624 seconds
+[move_group-6] [INFO] [1792998880.577889923] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'open_manipulator_x'...
+[move_group-6] [WARN] [1792998880.660801058] [move_group.moveit.moveit.core.robot_model]: Link end_effector_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-6] [INFO] [1792998880.667887045] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1
+[move_group-6] [INFO] [1792998881.003906974] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [INFO] [1792998881.004093343] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-6] [INFO] [1792998881.005093075] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-6] [INFO] [1792998881.005929247] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-6] [INFO] [1792998881.005975246] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-6] [INFO] [1792998881.006117841] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-6] [INFO] [1792998881.006581695] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [INFO] [1792998881.006706603] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-6] [INFO] [1792998881.007504593] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-6] [INFO] [1792998881.007539928] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-6] [INFO] [1792998881.007999734] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-6] [INFO] [1792998881.008476876] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-6] [WARN] [1792998881.008666653] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-6] [ERROR] [1792998881.008684130] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-6] [INFO] [1792998881.295615698] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-6] [INFO] [1792998881.296653612] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998881.297659447] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998881.297715026] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998881.297968429] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998881.297980916] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-6] [INFO] [1792998881.298007212] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-6] [INFO] [1792998881.298012924] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-6] [INFO] [1792998881.298027075] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-6] [INFO] [1792998881.298962479] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998881.301015518] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998881.301044581] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-6] [INFO] [1792998881.303131703] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-6] [INFO] [1792998881.303163260] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-6] [INFO] [1792998881.303837866] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-6] [INFO] [1792998881.327946124] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-6] [INFO] [1792998881.327999378] [move_group.moveit.moveit.plugins.simple_controller_manager]: gripper_controller will command a max effort of: 0
+[move_group-6] [INFO] [1792998881.331181677] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added GripperCommand controller for gripper_controller
+[move_group-6] [INFO] [1792998881.331402490] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-6] [INFO] [1792998881.331431813] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-6] [INFO] [1792998881.332198877] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-6] [INFO] [1792998881.332237329] [move_group]: MoveGroup debug mode is ON
+[move_group-6] [INFO] [1792998881.354676191] [move_group.moveit.moveit.ros.move_group.executable]: 
+[move_group-6] 
+[move_group-6] ********************************************************
+[move_group-6] * MoveGroup using: 
+[move_group-6] *     - apply_planning_scene_service
+[move_group-6] *     - clear_octomap_service
+[move_group-6] *     - get_group_urdf
+[move_group-6] *     - load_geometry_from_file
+[move_group-6] *     - CartesianPathService
+[move_group-6] *     - execute_trajectory_action
+[move_group-6] *     - get_planning_scene_service
+[move_group-6] *     - kinematics_service
+[move_group-6] *     - move_action
+[move_group-6] *     - motion_plan_service
+[move_group-6] *     - query_planners_service
+[move_group-6] *     - state_validation_service
+[move_group-6] *     - save_geometry_to_file
+[move_group-6] ********************************************************
+[move_group-6] 
+[move_group-6] [INFO] [1792998881.354734025] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-6] [INFO] [1792998881.354743635] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-6] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
+[move_group-6] [96mLoading 'move_group/ClearOctomapService'...[0m
+[move_group-6] [96mLoading 'move_group/GetUrdfService'...[0m
+[move_group-6] [96mLoading 'move_group/LoadGeometryFromFileService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupCartesianPathService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupGetPlanningSceneService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupKinematicsService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupMoveAction'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupPlanService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupQueryPlannersService'...[0m
+[move_group-6] [96mLoading 'move_group/MoveGroupStateValidationService'...[0m
+[move_group-6] [96mLoading 'move_group/SaveGeometryToFileService'...[0m
+[move_group-6] 
+[move_group-6] [92mYou can start planning now![0m
+[move_group-6] 
+[INFO] [rviz2-7]: process started with pid [30768]
+[rviz2-7] [INFO] [1792998881.885474047] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-7] [INFO] [1792998881.885603955] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-7] [INFO] [1792998881.902879503] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-7] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-7]          at line 321 in /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp
+[rviz2-7] [WARN] [1792998881.987866670] [rcl.logging_rosout]: Publisher already registered for node name: 'rviz2'. If this is due to multiple nodes with the same name then all logs for the logger named 'rviz2' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[rviz2-7] [ERROR] [1792998885.019758496] [rviz2.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-7] [INFO] [1792998885.037942737] [rviz2.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-7] [INFO] [1792998885.091908545] [rviz2.moveit.ros.rdf_loader]: Loaded robot model in 0.00424958 seconds
+[rviz2-7] [INFO] [1792998885.092015173] [rviz2.moveit.core.robot_model]: Loading robot model 'open_manipulator_x'...
+[rviz2-7] [WARN] [1792998885.185037091] [rviz2.moveit.core.robot_model]: Link end_effector_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-7] [INFO] [1792998885.194039014] [rviz2.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1
+[rviz2-7] [INFO] [1792998885.556969954] [rviz2.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-7] [INFO] [1792998885.557765042] [rviz2.moveit.ros.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-7] [INFO] [1792998885.834321860] [interactive_marker_display_96215342085008]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-7] [INFO] [1792998885.842108768] [rviz2.moveit.ros.motion_planning_frame]: group arm
+[rviz2-7] [INFO] [1792998885.842228433] [rviz2.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'arm' in namespace ''
+[rviz2-7] [INFO] [1792998885.847542391] [interactive_marker_display_96215342085008]: Sending request for interactive markers
+[rviz2-7] [INFO] [1792998885.859476825] [rviz2.moveit.ros.move_group_interface]: Ready to take commands for planning group arm.
+[rviz2-7] [INFO] [1792998885.860352425] [rviz2.moveit.ros.motion_planning_frame]: group arm
+[rviz2-7] [INFO] [1792998885.881136327] [interactive_marker_display_96215342085008]: Service response received for initialization
+[move_group-6] [INFO] [1792998893.583750714] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998893.584177459] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998893.602253474] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998893.602648051] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998893.602683526] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998893.602725235] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998893.602766202] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998893.603471017] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998893.603664117] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998893.606958014] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998893.607634228] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998893.607749894] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998893.607880100] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998894.113313205] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998894.113685635] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998894.122210254] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998894.122495208] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998894.122545965] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998894.122568493] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998894.122608448] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998894.123074185] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998894.123219122] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998894.138049136] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998894.138750924] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998894.138901964] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998894.139020876] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998894.654572140] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998894.654852685] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998894.662044850] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998894.662284568] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998894.662328731] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998894.662351510] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998894.662392176] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998894.662829012] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998894.663042845] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998894.678438017] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998894.679286345] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998894.679519359] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998894.679695543] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998895.194510010] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998895.194899043] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998895.202153478] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998895.202303586] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998895.202337528] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998895.202355636] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998895.202381160] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998895.202640940] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998895.202714817] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998895.207027651] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998895.207762077] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998895.207912345] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998895.208037079] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998895.723423676] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998895.723697907] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998895.742050447] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998895.742213612] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998895.742256633] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998895.742275674] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998895.742311449] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998895.742650507] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998895.742804233] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998895.747407312] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998895.748311076] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998895.748576218] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998895.748754064] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998896.263333915] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998896.263652198] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998896.282114930] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998896.282332411] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998896.282373618] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998896.282387267] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998896.282409604] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998896.282666448] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998896.282747780] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998896.286994196] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998896.287718970] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998896.287876343] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998896.287991016] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998896.802561084] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998896.802872994] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998896.822066953] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998896.822396621] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998896.822460155] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998896.822484457] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998896.822517096] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998896.822772887] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998896.822942897] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998896.826843692] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998896.827729667] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998896.828000691] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998896.828204211] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998897.343948765] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998897.344234639] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998897.362045412] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998897.362238811] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998897.362301083] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998897.362314671] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998897.362345346] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998897.362683281] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998897.362769533] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998897.377716320] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998897.378452326] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998897.378600760] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998897.378714761] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998897.893539695] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998897.893837775] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998897.902067397] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998897.902302104] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998897.902360948] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998897.902395742] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998897.902448333] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998897.902926544] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998897.903032208] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998897.918370422] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998897.919098531] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998897.919276969] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998897.919408517] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998898.463226890] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998898.463496991] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998898.482075176] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998898.482317187] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998898.482407338] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998898.482430687] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998898.482471563] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998898.482879796] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998898.483010332] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998898.486962382] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998898.487667622] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998898.487813741] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998898.487930398] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998899.002992261] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998899.003337510] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998899.022076014] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998899.022274553] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998899.022330962] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998899.022362939] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998899.022417925] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998899.022958898] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998899.023102481] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998899.036812918] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998899.037635876] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998899.037793669] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998899.037913742] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998899.552784705] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998899.552983826] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998899.562097127] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998899.562301017] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998899.562340110] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998899.562362798] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998899.562407332] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998899.562739684] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998899.562849135] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998899.566840341] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998899.567526240] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998899.567649510] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998899.567788503] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998900.082667792] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998900.082971182] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998900.102159334] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998900.102366601] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998900.102412959] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998900.102435105] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998900.102473326] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998900.102874051] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998900.103001821] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998900.117914933] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998900.118682783] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998900.118832489] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998900.118951400] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998900.633369423] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998900.633698437] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998900.642218372] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998900.642395315] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998900.642461234] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998900.642484203] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998900.642523596] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998900.642916806] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998900.643040677] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998900.658398277] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998900.659120370] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998900.659280809] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998900.659394389] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998901.174355650] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998901.174668780] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998901.182015107] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998901.182137325] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998901.182163881] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998901.182175966] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998901.182212062] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998901.182485228] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998901.182562501] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998901.197565439] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998901.198153919] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998901.198281037] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998901.198379635] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998901.713397326] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998901.713734387] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998901.722181314] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998901.722399604] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998901.722440039] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998901.722459219] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998901.722499554] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998901.722862850] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998901.723001392] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998901.736931559] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998901.737501169] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998901.737613266] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998901.737709919] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998902.252215972] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998902.252548021] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998902.262233834] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998902.262392669] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998902.262419676] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998902.262431992] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998902.262465071] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998902.262719908] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998902.262815910] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998902.266669037] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998902.267381007] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998902.267537296] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998902.267677622] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998902.782604039] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998902.782808059] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998902.802317375] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998902.802515643] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998902.802544835] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998902.802558102] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998902.802589228] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998902.802897998] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998902.802982987] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998902.807196223] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998902.807920579] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998902.808064081] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998902.808175486] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998903.323483888] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998903.323797608] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998903.342297659] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998903.342476526] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998903.342568449] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998903.342593612] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998903.342618926] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998903.342900829] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998903.342977039] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998903.358361833] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998903.359057778] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998903.359206521] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998903.359317264] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998903.875535997] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998903.875846060] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998903.882104383] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998903.882316881] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998903.882343617] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998903.882355742] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998903.882379653] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998903.882658720] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998903.882788363] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998903.898383399] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998903.899216363] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998903.899418037] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998903.899573104] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998904.415150597] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998904.415412558] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998904.422136531] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998904.422428635] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998904.422486998] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998904.422516049] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998904.422560563] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998904.423034740] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998904.423274114] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998904.427622510] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998904.428514907] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998904.428827244] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998904.429081399] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998904.944349421] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998904.944572831] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998904.962159703] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998904.962397814] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998904.962438610] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998904.962460796] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998904.962500520] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998904.963005652] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998904.963238883] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998904.966958817] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998904.967800808] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998904.967970936] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998904.968108996] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998905.483968181] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998905.484279736] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998905.502029723] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998905.502231206] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998905.502268585] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998905.502285701] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998905.502308699] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998905.502579909] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998905.502656149] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998905.517936145] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998905.518609951] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998905.518744654] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998905.518853333] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998906.033133556] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998906.033492730] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998906.042150374] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998906.042474204] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998906.042527145] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998906.042557008] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998906.042605409] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998906.043086931] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998906.043291100] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998906.058145818] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998906.058882876] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998906.059027149] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998906.059138483] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998906.574839607] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998906.575097839] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998906.582134969] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998906.582360302] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998906.582400938] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998906.582424417] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998906.582463609] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998906.582923906] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998906.583059280] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998906.597524872] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998906.598299960] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998906.598454424] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998906.598576480] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998907.113958611] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998907.114527906] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998907.122080868] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998907.122221352] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998907.122240222] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998907.122249762] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998907.122270315] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998907.122536674] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998907.122669293] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998907.126048825] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998907.126585181] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998907.126694370] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998907.126797396] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998907.640679161] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998907.640925909] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998907.642440327] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998907.642660970] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998907.642720655] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998907.642772524] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998907.642813250] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998907.643142721] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998907.643279508] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998907.647555202] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998907.648326661] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998907.648479201] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998907.648597289] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998908.163595710] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998908.163838499] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998908.182081599] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998908.182331723] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998908.182373421] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998908.182403835] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998908.182457948] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998908.183010447] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998908.183263878] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998908.197068129] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998908.197606468] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998908.197716338] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998908.197823373] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998908.711557476] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998908.711773379] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998908.722236542] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998908.722509434] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998908.722629035] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998908.722669009] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998908.722727061] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998908.723260580] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998908.723351460] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998908.726698690] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998908.727451328] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998908.727592795] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998908.727696282] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998909.242246022] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998909.242480373] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998909.262148993] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998909.262365516] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998909.262392814] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998909.262406011] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998909.262429931] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998909.262705339] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998909.262801881] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998909.266975367] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998909.267745401] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998909.267903663] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998909.268044778] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998909.783637231] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998909.783871041] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998909.802128783] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998909.802379930] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998909.802423040] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998909.802446670] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998909.802487445] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998909.802977332] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998909.803132296] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998909.817812522] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998909.818857872] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998909.819112987] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998909.819365176] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998910.335967181] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998910.336262409] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998910.342231018] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998910.342463656] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998910.342498318] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998910.342511055] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998910.342535316] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998910.342803157] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998910.342893857] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998910.346800889] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998910.347626528] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998910.347822829] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998910.347971660] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998910.862923299] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998910.863215370] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998910.882148430] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998910.882325771] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998910.882350192] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998910.882363199] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998910.882387911] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998910.882684252] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998910.882786466] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998910.886731798] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998910.887562548] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998910.887718404] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998910.887859309] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998911.403452413] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998911.403713670] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998911.422205548] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998911.422393622] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998911.422421560] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998911.422434247] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998911.422458457] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998911.422725055] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998911.422817729] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998911.427115573] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998911.427956724] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998911.428117230] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998911.428259036] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998911.943312112] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998911.943610486] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998911.962247518] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998911.962497982] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998911.962533025] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998911.962552606] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998911.962588481] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998911.962996094] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998911.963230916] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998911.977262841] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998911.977886897] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998911.978009684] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998911.978110244] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998912.492876945] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998912.493180841] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998912.502225776] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998912.502506543] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998912.502570607] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998912.502605881] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998912.502661918] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998912.503249767] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998912.503436417] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998912.517694324] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998912.518659452] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998912.518929908] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998912.519114534] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998913.033998899] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998913.034245414] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998913.042181519] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998913.042425789] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998913.042467617] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998913.042491286] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998913.042530588] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998913.043036586] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998913.043210670] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998913.057658342] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998913.058476061] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998913.058651417] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998913.058774595] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998913.574091118] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998913.574389962] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998913.582205214] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998913.582398619] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998913.582462131] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998913.582485650] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998913.582530785] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998913.583011499] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998913.583157785] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998913.587372593] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998913.588157834] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998913.588340967] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998913.588479436] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998914.104069451] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998914.104389380] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998914.122164961] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998914.122407898] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998914.122440596] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998914.122453433] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998914.122477794] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998914.122858098] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998914.122999964] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998914.138098144] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998914.139013706] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998914.139273749] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998914.139453855] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998914.654739616] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998914.655030083] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998914.662166336] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998914.662366353] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998914.662419244] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998914.662453365] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998914.662500554] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998914.662957538] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998914.663095666] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998914.677844186] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998914.678694321] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998914.678866581] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998914.679026345] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998915.194065080] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998915.194418558] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998915.202116673] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998915.202401698] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998915.202456081] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998915.202479360] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998915.202520326] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998915.202953059] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998915.203111028] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998915.207240857] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998915.208250824] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998915.208444869] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998915.208573027] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998915.723854968] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998915.724122436] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998915.742162553] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998915.742407224] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998915.742449041] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998915.742472240] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998915.742515099] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998915.743003498] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998915.743105120] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998915.757866606] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998915.758802489] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998915.758977053] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998915.759104209] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998916.274829253] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998916.275129479] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998916.282089745] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998916.282307409] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998916.282346590] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998916.282366853] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998916.282402126] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998916.282783612] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998916.282896698] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998916.298455124] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998916.299415978] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998916.299596143] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998916.299720823] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998916.814839598] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998916.815060649] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998916.822068934] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998916.822295186] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998916.822350932] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998916.822379392] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998916.822419365] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998916.822874314] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998916.823097239] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998916.837350664] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998916.838309263] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998916.838494178] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998916.838622907] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998917.345341174] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998917.345685913] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998917.362120884] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998917.362385034] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998917.362426260] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998917.362448276] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998917.362495755] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998917.362958369] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998917.363104894] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998917.367633522] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998917.368600307] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998917.368775192] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998917.368915163] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998917.884218672] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998917.884584034] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998917.902169583] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998917.902332502] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998917.902356482] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998917.902368387] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998917.902394081] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998917.902717725] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998917.902878530] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998917.917917392] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998917.919032726] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998917.919343243] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998917.919525182] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998918.434886933] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998918.435136322] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998918.442860960] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998918.443047689] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998918.443125811] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998918.443149110] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998918.443218104] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998918.443727895] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998918.443899332] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998918.447980352] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998918.448934158] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998918.449110165] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998918.449243923] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998918.964215145] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998918.964477662] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998918.982042784] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998918.982200552] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998918.982241828] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998918.982264115] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998918.982300230] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998918.982682566] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998918.982837870] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998918.987122312] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998918.987990551] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998918.988135993] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998918.988262898] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998919.503052179] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998919.503390724] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998919.522235955] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998919.522491557] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998919.522536431] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998919.522559228] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998919.522599602] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998919.523056904] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998919.523244274] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998919.538239302] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998919.539105695] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998919.539338450] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998919.539552575] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998920.054338890] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998920.054594211] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998920.062062765] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998920.062222788] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998920.062247529] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998920.062259734] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998920.062287512] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998920.062580612] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998920.062671130] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998920.067093568] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998920.068069438] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998920.068255936] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998920.068381356] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998920.583864281] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998920.584199819] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998920.602063062] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998920.602245100] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998920.602279642] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998920.602306508] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998920.602337272] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998920.602680306] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998920.602801718] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998920.607424022] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998920.608710006] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998920.609042598] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998920.609244568] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998921.124301157] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998921.124651816] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998921.142062243] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998921.142202114] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998921.142233790] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998921.142253731] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998921.142282992] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998921.142606745] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998921.142723207] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998921.147780669] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998921.148924386] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998921.149103899] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998921.149266868] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998921.664217348] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998921.664467507] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998921.682227190] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998921.682405742] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998921.682453030] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998921.682475406] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998921.682515520] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998921.682869004] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998921.683005859] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998921.687810235] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998921.688890009] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998921.689084924] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998921.689230958] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998922.205340839] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998922.205531535] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998922.222533450] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998922.222737624] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998922.222784732] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998922.222810074] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998922.222861822] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998922.223204875] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998922.223294220] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998922.228502108] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998922.229599878] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998922.229789271] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998922.229918630] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998922.745735808] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998922.746089192] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998922.762225549] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998922.762371462] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998922.762401975] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998922.762424622] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998922.762456859] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998922.762767244] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998922.762907135] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998922.778488739] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998922.779572029] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998922.779758226] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998922.779916765] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998923.295402487] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998923.295672297] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998923.302088025] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998923.302287569] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998923.302401566] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998923.302426668] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998923.302466009] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998923.302950174] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998923.303090466] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998923.318662740] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998923.319753073] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998923.319938037] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998923.320087177] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998923.835365398] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998923.835773385] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998923.842250250] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998923.842400973] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998923.842439172] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998923.842462240] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998923.842492763] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998923.842832939] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998923.842952427] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998923.847667014] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998923.848696651] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998923.848954466] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998923.849114789] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998924.364442605] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998924.364770745] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998924.382196353] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998924.382363791] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998924.382389364] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998924.382401288] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998924.382426441] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998924.382695509] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998924.382776246] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998924.386993665] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998924.388081241] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998924.388286587] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998924.388447180] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998924.903214260] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998924.903557983] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998924.922176977] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998924.922380860] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998924.922432797] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998924.922465134] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998924.922518415] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998924.922867299] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998924.922956804] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998924.927263588] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998924.928346034] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998924.928531939] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998924.928677161] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998925.444237226] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998925.444521886] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998925.462317207] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998925.462529618] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998925.462576665] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998925.462599272] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998925.462638543] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998925.463065739] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998925.463245752] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998925.467240985] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998925.468330092] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998925.468531390] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998925.468705581] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998925.983515023] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998925.983809403] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998926.002280173] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998926.002497554] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998926.002566186] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998926.002600537] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998926.002664800] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998926.003082325] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998926.003205641] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998926.018300544] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998926.019684180] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998926.020028905] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998926.020240483] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998926.536264101] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998926.536616731] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998926.542241003] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998926.542461891] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998926.542502044] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998926.542524631] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998926.542563842] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998926.542975515] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998926.543065121] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998926.547578231] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998926.548852120] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998926.549143754] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998926.549332906] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998927.064505738] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998927.064804617] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998927.082511278] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998927.082710951] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998927.082755644] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998927.082778952] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998927.082817562] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998927.083201176] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998927.083344974] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998927.098221014] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998927.099382349] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998927.099581100] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998927.099736081] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998927.607534482] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998927.607836969] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998927.622063504] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998927.622219006] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998927.622242775] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998927.622254981] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998927.622296396] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998927.622763784] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998927.622904215] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998927.638258034] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998927.639490005] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998927.639706663] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998927.639843537] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998928.156022238] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998928.156393727] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998928.162236055] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998928.162426550] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998928.162468346] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998928.162485993] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998928.162511766] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998928.162831798] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998928.163010448] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998928.168260461] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998928.169621427] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998928.169856393] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998928.170005532] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998928.685604834] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998928.685892730] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998928.702094473] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998928.702255587] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998928.709493643] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998928.709542374] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998928.709589512] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998928.709946801] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998928.710050886] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998928.714750481] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998928.715963390] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998928.716173515] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998928.716328967] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998929.223284676] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998929.223621052] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998929.242799260] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998929.242991177] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998929.243052113] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998929.243084750] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998929.243129914] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998929.243615297] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998929.243794167] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998929.247529632] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998929.248717147] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998929.248915016] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998929.249066730] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998929.764287334] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998929.764593718] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998929.782106602] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998929.782398746] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998929.782467899] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998929.782502942] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998929.782560110] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998929.783028939] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998929.783145691] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998929.798497095] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998929.799847678] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998929.800209997] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998929.800450655] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998930.316659057] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998930.316980983] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998930.322028123] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998930.322230792] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998930.322262237] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998930.322279643] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998930.322312851] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998930.322677064] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998930.322783955] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998930.336307112] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998930.337080099] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998930.337230119] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998930.337351811] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.
+[move_group-6] [INFO] [1792998930.851605827] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-6] [INFO] [1792998930.851875425] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-6] [INFO] [1792998930.862234753] [move_group.moveit.moveit.ros.move_group.move_action]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-6] [INFO] [1792998930.862485672] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-6] [INFO] [1792998930.862541898] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1792998930.862565126] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-6] [INFO] [1792998930.862605469] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-6] [INFO] [1792998930.863057503] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-6] [INFO] [1792998930.863243478] [move_group]: Calling Planner 'OMPL'
+[move_group-6] [INFO] [1792998930.878352291] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1792998930.879512559] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-6] [INFO] [1792998930.879708263] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-6] [INFO] [1792998930.879864486] [move_group.moveit.moveit.ros.move_group.move_action]: Motion plan was computed successfully.

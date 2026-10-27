@@ -1,0 +1,5 @@
+# FeedbackControl.srv
+# Empty request
+---
+bool success
+string message

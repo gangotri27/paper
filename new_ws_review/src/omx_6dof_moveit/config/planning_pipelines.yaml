@@ -1,0 +1,2 @@
+planning_pipelines:
+  pipeline_names: ["ompl"]  # Remove pilz from the list

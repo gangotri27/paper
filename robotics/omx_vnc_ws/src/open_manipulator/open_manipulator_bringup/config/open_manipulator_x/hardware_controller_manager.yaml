@@ -1,0 +1,164 @@
+/:
+  controller_manager:
+    ros__parameters:
+      update_rate: 100  # Hz
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      arm_controller:
+        type: joint_trajectory_controller/JointTrajectoryController
+
+      gripper_controller:
+        type: position_controllers/GripperActionController
+
+      joint1_position_controller:
+        type: position_controllers/JointGroupPositionController
+
+      joint3_position_controller:
+        type: position_controllers/JointGroupPositionController
+
+/:
+  arm_controller:
+    ros__parameters:
+      joints:
+        - joint1
+        - joint2
+        - joint3
+        - joint4
+
+      interface_name: position
+
+      command_interfaces:
+        - position
+
+      state_interfaces:
+        - position
+        - velocity
+
+      allow_partial_joints_goal: true
+
+/:
+  joint1_position_controller:
+    ros__parameters:
+      joints:
+        - joint1
+      command_interfaces:
+        - position
+      state_interfaces:
+        - position
+        - velocity
+
+
+/:
+  joint3_position_controller:
+    ros__parameters:
+      joints:
+        - joint3
+      command_interfaces:
+        - position
+      state_interfaces:
+        - position
+        - velocity
+
+
+/:
+  gripper_controller:
+    ros__parameters:
+      joint: gripper_left_joint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 100  # Hz
+
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster
+
+#     gripper_controller:
+#       type: position_controllers/GripperActionController
+
+#     # USE STANDARD CONTROLLER (Guaranteed to load)
+#     custom_group_controller:
+#       type: position_controllers/JointGroupPositionController
+
+# custom_group_controller:
+#   ros__parameters:
+#     joints:
+#       - joint1
+#       - joint3
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
+
+# gripper_controller:
+#   ros__parameters:
+#     joint: gripper_left_joint
+
+
+
+
+
+
+
+
+
+
+
+
+
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 100  # Hz
+
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster
+
+#     gripper_controller:
+#       type: position_controllers/GripperActionController
+
+#     my_controller:
+#       type: openmanipulator_custom_controller::MyController
+#       # type: openmanipulator_custom_controller/MyController
+
+
+# my_controller:
+#   ros__parameters:
+#     joints:
+#       - joint1
+#       - joint3
+
+
+
+# gripper_controller:
+#   ros__parameters:
+#     joint: gripper_left_joint
+
+
+
+
+
+
+
+
+

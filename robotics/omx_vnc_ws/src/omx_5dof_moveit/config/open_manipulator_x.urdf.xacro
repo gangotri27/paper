@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="open_manipulator_x">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- 1. Import Geometry (Links/Joints only) -->
+    <xacro:include filename="$(find open_manipulator_description)/urdf/open_manipulator_x/open_manipulator_x_arm.urdf.xacro" />
+
+    <!-- 2. Import Control (The file we just fixed in Step 1) -->
+    <!-- We use $(find omx_5dof_moveit) to make sure it finds the local file -->
+    <xacro:include filename="$(find omx_5dof_moveit)/config/open_manipulator_x.ros2_control.xacro" />
+
+    <!-- 3. Create World Link -->
+    <link name="world"/>
+    <joint name="world_fixed" type="fixed">
+        <parent link="world"/>
+        <child link="link1"/>
+    </joint>
+
+    <!-- 4. Instantiate Robot and Control -->
+    <xacro:open_manipulator_x prefix="" />
+    <xacro:open_manipulator_x_ros2_control name="MockSystem" initial_positions_file="$(arg initial_positions_file)"/>
+</robot>

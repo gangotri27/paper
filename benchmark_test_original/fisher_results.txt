@@ -1,0 +1,18 @@
+======================================================================
+FISHER'S EXACT TEST RESULTS
+======================================================================
+
+6-DOF: 17/70 = 24.3%
+5-DOF: 0/70 = 0.0%
+
+Contingency table:
+           Success  Failure
+6-DOF          17       53
+5-DOF           0       70
+
+Chi-square test: p = 0.000035
+Fisher's exact test: p = 0.000005
+Odds ratio = inf
+Phi coefficient = 0.372
+
+CONCLUSION: The difference is HIGHLY SIGNIFICANT (p = 0.000005)

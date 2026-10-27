@@ -1,0 +1,109 @@
+{
+  "success_rates": {
+    "6dof": {
+      "trials": 112,
+      "successes": 28,
+      "rate": 0.25,
+      "ci_lower": 0.17900186747034863,
+      "ci_upper": 0.3375793952193932
+    },
+    "5dof": {
+      "trials": 70,
+      "successes": 0,
+      "rate": 0.0,
+      "ci_lower": 0,
+      "ci_upper": 0.05202487486728348
+    }
+  },
+  "by_goal": {
+    "6dof": {
+      "0": {
+        "trials": 16,
+        "successes": 0,
+        "rate": 0.0,
+        "avg_planning_time": 0
+      },
+      "15": {
+        "trials": 16,
+        "successes": 0,
+        "rate": 0.0,
+        "avg_planning_time": 0
+      },
+      "30": {
+        "trials": 16,
+        "successes": 0,
+        "rate": 0.0,
+        "avg_planning_time": 0
+      },
+      "45": {
+        "trials": 16,
+        "successes": 11,
+        "rate": 68.75,
+        "avg_planning_time": 0.7937964742833917
+      },
+      "60": {
+        "trials": 16,
+        "successes": 9,
+        "rate": 56.25,
+        "avg_planning_time": 0.5018648306528727
+      },
+      "75": {
+        "trials": 16,
+        "successes": 8,
+        "rate": 50.0,
+        "avg_planning_time": 0.4814453721046448
+      },
+      "90": {
+        "trials": 0,
+        "successes": 0,
+        "rate": 0,
+        "avg_planning_time": 0
+      }
+    },
+    "5dof": {
+      "0": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "15": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "30": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "45": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "60": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "75": {
+        "trials": 10,
+        "successes": 0,
+        "rate": 0.0
+      },
+      "90": {
+        "trials": 0,
+        "successes": 0,
+        "rate": 0
+      }
+    }
+  },
+  "statistics": {
+    "success_rate": {
+      "chi_square": 18.80594561688312,
+      "p_value": 1.4471528960727258e-05,
+      "dof": 1,
+      "cramers_v": 0.3214488629958672
+    }
+  }
+}

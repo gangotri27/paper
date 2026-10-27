@@ -1,0 +1,7 @@
+{
+  "robot_type": "5dof",
+  "wall_y": 0.12,
+  "num_goals": 0,
+  "goals": [],
+  "poses_info": []
+}

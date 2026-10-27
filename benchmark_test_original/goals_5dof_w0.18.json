@@ -1,0 +1,8 @@
+{
+  "robot_type": "5dof",
+  "wall_y": 0.18,
+  "num_goals": 0,
+  "goals": [],
+  "poses_info": [],
+  "note": "Generated using 5-DOF robot IK service"
+}

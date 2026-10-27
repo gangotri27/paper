@@ -1,0 +1,2 @@
+config,roll_deg,min_valid_gap_m,largest_invalid_gap_m,monotone,note
+5dof,0.0,0.129,0.128,1,

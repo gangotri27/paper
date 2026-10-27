@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="fk6" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="/home/gangotri/new_ws_review/src/open_manipulator/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x_arm.urdf.xacro"/>
+  <link name="world"/>
+  <joint name="world_fixed" type="fixed"><origin xyz="0 0 0" rpy="0 0 0"/><parent link="world"/><child link="link1"/></joint>
+  <xacro:open_manipulator_x prefix=""/>
+</robot>

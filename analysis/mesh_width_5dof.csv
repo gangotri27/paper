@@ -1,0 +1,2 @@
+config,roll_deg,predicted_mm,limiting_link,second_link,measured_mm,diff_mm
+5dof,0.0,128.6,link5,gripper_left_link 97.2,129.0,-0.4
